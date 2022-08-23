@@ -1,14 +1,14 @@
-import React from 'react'
-import Hero from '../components/Hero/Hero'
-import { Button, Card, Container, Row, Col } from 'react-bootstrap'
-import FoodContainer from '../components/foodcontainer/FoodContainer'
-import FruitContainer from '../components/fruitscontainer/FruitContainer'
-import StoreHeading from '../components/storeheading/StoreHeading'
-import CategoryFeature from '../components/categoryfeature/CategoryFeature'
-import Categories from '../components/Categories/Categories'
-import PopularStalls from '../components/PopularStalls/PopularStalls'
-import StartShopping from '../components/StartShopping'
-import AutoSlide from '../components/AutoSlide/AutoSlide'
+import React from "react";
+import Hero from "../components/Hero/Hero";
+import FoodContainer from "../components/foodcontainer/FoodContainer";
+import FruitContainer from "../components/fruitscontainer/FruitContainer";
+import StoreHeading from "../components/storeheading/StoreHeading";
+import Categories from "../components/Categories/Categories";
+import PopularStalls from "../components/PopularStalls/PopularStalls";
+import StartShopping from "../components/StartShopping";
+import Autoslide from "../components/Autoslide/Autoslide";
+
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -18,13 +18,14 @@ const Home = () => {
         <Categories />
         <PopularStalls />
         <StartShopping />
-        <AutoSlide />
+        <Autoslide />
         <FoodContainer title="Food items" />
-        <StoreHeading />
+        <StoreHeading narative="YOUR FAVORITE STORE FOR WHOLESALE MARKEt" />
         <FruitContainer title="Fruits" />
+        <Footer />
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+body, html {
+    font-family: 'Playfair Display', serif;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 45px;
+  margin: 10px;
+  
+}
+
+.list h3{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+.mobile-footer-details{
+  display: flex;
+  gap: 30px;
+}
+footer ul li{
+list-style-type: none;
+margin-bottom: 20px;
+
+}
+
+  @media screen and (max-width: 768px) {
+    .list{
+      flex-direction: column;
+      padding: 20px;
+    }
+    #overview, #connect, #company{
+      padding-left: 0;
+    }
+    .mobile-footer-details{
+      display: flex;
+    }
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+    #overview{
+      margin-right: auto;
+    }
+
+    /* .mobile-only{
+        display: flex;
+        flex-direction: column;
+    } */
+  }
+
+    :root {
+        --primary_color: #FF7E07
+    }
+
+    .button_primary {
+        background-color: var(--primary_color);
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+    }
+
+  .pink-background {
+    background-color: #FF7E0733
+  }
+  .orange-background {
+    background-color: #FF7E07
+  }
+  .ash-color {
+    /* background-color: #565956; */
+    /* background: #565956 20%; */
+    background: rgba(86, 89, 86, 0.2);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+.social-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.social-container a{
+  font-size: 20px;
+}
+
+.rights{
+  text-align: center;
+}
+
+#overview li:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+
+
+
+

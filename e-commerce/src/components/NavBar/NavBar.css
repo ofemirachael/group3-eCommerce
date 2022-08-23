@@ -39,9 +39,22 @@ body{
 .navbar .link{
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.nav-help{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.nav-help:hover{
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 .navbar-brand{
-    margin-right: 350px !important;
+    margin-right: 50% !important;
     font-size: 20pt !important;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bolder;
@@ -49,6 +62,9 @@ body{
 }
 .brandAndLinks{
     margin-right: auto !important;
+}
+.link-logo{
+    font-size: 20px;
 }
 .search > form{
     display: flex !important;
@@ -68,13 +84,16 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: white;
+    background-color: #FF7E07;
+    padding-left: 0;
 }
 .products-mobile li {
     margin-bottom: 10px;
     width: 100%;
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
+    padding-left: none;
+    margin-left: none;
 }
 .menu-button:hover{
     border: #FF7E07 1px solid;
@@ -105,7 +124,7 @@ body{
 
 @media screen and (max-width: 768px) {
     .mobile-remove{
-        display: none;
+        display: none !important;
     }
     .navbar{
         flex-direction: column;
@@ -119,7 +138,7 @@ body{
         font-size: 14pt !important;    
     }
     .navbar-brand{
-        margin-right: 120px !important;
+        margin-right: 50% !important;
         font-family: 'Julius Sans One', sans-serif;
         font-weight: bolder;
         color: white;
@@ -129,6 +148,9 @@ body{
     .brandAndLinks ul{
         gap: 15px !important;
         right: 0px !important;
+    }
+    .link-logo{
+        font-size: 20pt;
     }
     .search{
         display: flex !important;
@@ -161,6 +183,10 @@ body{
         right: 10px;
         color: white;
         font-size: 25px
+    }
+    .mobile-menu-body{
+        background-color: #FF7E07;
+        color: white;
     }
     .expanded{
         display: block;

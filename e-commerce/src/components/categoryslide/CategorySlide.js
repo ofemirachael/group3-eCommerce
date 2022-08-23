@@ -14,7 +14,7 @@ const CategorySlide = ({ images, title }) => {
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     arrow: false,
   }
   return (
@@ -28,7 +28,6 @@ const CategorySlide = ({ images, title }) => {
 
             <div className="catDiv">
               <img src={item.src} alt={item.alt} className="catimage" />
-              {console.log('imag e is ', item.src)}
             </div>
             <div className="navandname">
               <div className="sliderdiv"></div>
